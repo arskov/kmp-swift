@@ -1,0 +1,8 @@
+framework module "KmpSample" {
+    umbrella header "KmpSample.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}

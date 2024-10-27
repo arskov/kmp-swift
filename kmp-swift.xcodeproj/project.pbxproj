@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		303144762CCEBA9200F18FE1 /* KmpSample.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303144752CCEBA9200F18FE1 /* KmpSample.xcframework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		303144632CCEADEC00F18FE1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,12 +24,14 @@
 
 /* Begin PBXFileReference section */
 		303144652CCEADEC00F18FE1 /* kmp-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kmp-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
+		303144752CCEBA9200F18FE1 /* KmpSample.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KmpSample.xcframework; sourceTree = "<group>"; };
+		303144782CCEBC8300F18FE1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		303144672CCEADEC00F18FE1 /* kmp-swift */ = {
+		303144672CCEADEC00F18FE1 /* IntegrationGcTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "kmp-swift";
+			path = IntegrationGcTest;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303144762CCEBA9200F18FE1 /* KmpSample.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +51,9 @@
 		3031445C2CCEADEC00F18FE1 = {
 			isa = PBXGroup;
 			children = (
-				303144672CCEADEC00F18FE1 /* kmp-swift */,
+				303144772CCEBC6E00F18FE1 /* IntegrationMisc */,
+				303144672CCEADEC00F18FE1 /* IntegrationGcTest */,
+				3031446F2CCEAE4300F18FE1 /* Frameworks */,
 				303144662CCEADEC00F18FE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +64,22 @@
 				303144652CCEADEC00F18FE1 /* kmp-swift */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3031446F2CCEAE4300F18FE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				303144752CCEBA9200F18FE1 /* KmpSample.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		303144772CCEBC6E00F18FE1 /* IntegrationMisc */ = {
+			isa = PBXGroup;
+			children = (
+				303144782CCEBC8300F18FE1 /* main.swift */,
+			);
+			path = IntegrationMisc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,7 +98,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				303144672CCEADEC00F18FE1 /* kmp-swift */,
+				303144672CCEADEC00F18FE1 /* IntegrationGcTest */,
 			);
 			name = "kmp-swift";
 			packageProductDependencies = (
